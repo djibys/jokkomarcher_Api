@@ -22,17 +22,17 @@ class CreateUsersTable extends Migration
             $table->string('adress');
             $table->string('phone_numbur');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            // $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
 
             
-            $table->foreignId('society_id')
-            ->constrained('societies')
-            ->onUpdate('cascade')
-            ->onDelete('cascade');
+            // $table->foreignId('society_id')
+            // ->constrained('societies')
+            // ->onUpdate('cascade')
+            // ->onDelete('cascade');
             
             $table->rememberToken();
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 

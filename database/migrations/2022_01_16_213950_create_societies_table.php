@@ -20,11 +20,11 @@ class CreateSocietiesTable extends Migration
             $table->string('logo');
             
             
-            $table->foreignId('categorie_id')
-            ->constrained('categorie_societies')
-            ->onUpdate('cascade')
-            ->onDelete('cascade');
-            $table->timestamps();
+            // $table->foreignId('categorie_id')
+            // ->constrained('categorie_societies')
+            // ->onUpdate('cascade')
+            // ->onDelete('cascade');
+            // $table->timestamps();
         });
     }
 
